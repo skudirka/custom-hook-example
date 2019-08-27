@@ -11,7 +11,7 @@ const useFetch = url => {
     };
 
     fetchData();
-  });
+  }/*, [url]*/); // pass second parameter if you want to only call once (or when URL changes), otherwise it will continue to fire during rendering.
 
   return data;
 };
